@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education and Certifications</title>
+    <style>
+      /* styles.css */
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #2a3b4c, #1e2a36); /* Gradient background */
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .main-content {
+        display: flex;
+        gap: 50px; /* Space between education and certifications */
+        max-width: 1100px;
+        padding: 20px;
+      }
+
+      .education-section,
+      .certifications-section {
+        background-color: #212f3d; /* Deep blue-gray for a sleek look */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        width: 45%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+      }
+
+      .education-section:hover,
+      .certifications-section:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+      }
+
+      .education-section h2,
+      .certifications-section h2 {
+        font-size: 28px;
+        color: #ff8c42; /* Warm orange for section titles */
+        margin-bottom: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .education-details,
+      .certification-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .education-item,
+      .certification-item {
+        margin-bottom: 20px;
+        width: 100%;
+        border-bottom: 1px solid #34495e; /* Lighter border between items */
+        padding-bottom: 12px;
+      }
+
+      .education-item h3,
+      .certification-item h3 {
+        font-size: 22px;
+        color: #ffd700; /* Golden yellow for titles */
+        margin: 0;
+        text-align: center;
+        transition: color 0.3s ease;
+      }
+
+      .education-item h3:hover,
+      .certification-item h3:hover {
+        color: #e67e22; /* Orange color on hover */
+      }
+
+      .education-item .degree,
+      .certification-item .institution,
+      .certification-item .year,
+      .education-item .cgpa {
+        font-size: 16px;
+        color: #bdc3c7; /* Light gray for additional details */
+        margin: 5px 0;
+      }
+
+      .education-item .degree,
+      .certification-item .institution {
+        font-weight: bold;
+      }
+
+      /* Arrow button styles */
+      .back-arrow {
+        display: inline-block;
+        font-size: 30px;
+        color: #ffd700;
+        cursor: pointer;
+        margin-bottom: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .back-arrow:hover {
+        color: #e67e22;
+      }
+
+      /* Media query for smaller screens */
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .education-section,
+        .certifications-section {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-content">
+      <!-- Education Section -->
+      <div class="education-section">
+        <a href="index.html" class="back-arrow">&#8592;</a> <!-- Left arrow -->
+        <h2>Education</h2>
+        <div class="education-details">
+          <div class="education-item">
+            <h3>Avanthi Institute Of Technologies</h3>
+            <p class="degree">BSc. Computers (2021 - 2024)</p>
+            <p class="cgpa">CGPA: 9.5</p>
+          </div>
+          <div class="education-item">
+            <h3>Sri Basara Junior College</h3>
+            <p class="degree">Intermediate (2019 - 2020)</p>
+            <p class="cgpa">CGPA: 9.2</p>
+          </div>
+          <div class="education-item">
+            <h3>St. Ann's Aided High School</h3>
+            <p class="degree">X SSC (2018 - 2019)</p>
+            <p class="cgpa">CGPA: 9.7</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Certifications Section -->
+      <div class="certifications-section">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+          <h3>UI/UX Designer Certification</h3>
+          <p class="institution">Tech Mahindra Foundation SMART Academy</p>
+          <p class="year">2025</p>
+        </div>
+        <div class="certification-item">
+          <h3>MS Office Certification</h3>
+          <p class="institution">Data Pro</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
